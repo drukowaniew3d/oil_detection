@@ -79,7 +79,7 @@ while True:
 #########################
 
  
-    if sys.argv[1] == "lake_detection":
+    if sys.argv[1] == "leakage_detection":
 
 
         ### Remember frame to compare when input0 = 1 (overwrite initial frame) ###
@@ -152,7 +152,7 @@ while True:
                     cv2.rectangle(newFrame, (Dots[Iter2][1] - DotSize, Dots[Iter2][0] - DotSize), (Dots[Iter2][1] + DotSize, Dots[Iter2][0] + DotSize), (0, 0, 255), 2)
                     #cv2.imshow('ActualDot',ActualDot)
     else: 
-        print("Wrong method. Please choose from: lake_detection or safety_dots")
+        print("Wrong method. Please choose from: leakage_detection or safety_dots")
         exit()
 
     ### SHOW RESULTS ###
